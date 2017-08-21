@@ -170,7 +170,6 @@ class XmlProductDecoder implements DecoderInterface
      */
     protected function addProductValue(array $standardItem, $pimCode, $value, $unit)
     {
-        /** @var AttributeInterface $pimAttribute */
         $pimAttribute = $this->attributeRepository->findOneByIdentifier($pimCode);
 
         if (null === $pimAttribute) {
